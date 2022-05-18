@@ -118,9 +118,10 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light shadow fixed-top"id="navigacija">
         <div class="container">
           <ul class="navbar-nav mx-auto sm-12 md-4"id="mojUl"> <!--MX-AUTO CENTRIRA postoje jos 'ms' i sl.....-->
-              <li class="nav-item active "id="mojLi"><a class="nav-link" href="index.html">Home</a></li>
-              <li class="nav-item active "id="mojLi"><a class="nav-link" href="tablica.php">Library(Treba htdocs)</a></li>
-              <li class="nav-item active "id="mojLi"><a class="nav-link" href="simulator.html">Play</a></li>
+            <li class="nav-item active "id="mojLi"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item active "id="mojLi"><a class="nav-link" href="tablica.php">Library</a></li>
+            <li class="nav-item active "id="mojLi"><a class="nav-link" href="simulator.html">Sviraj</a></li>
+            <li class="nav-item active "id="mojLi"><a class="nav-link" href="kviz.html">Kviz</a></li>
           </ul>  
           <li class="nav-item active "id="dn"><a class="nav-link"><h3><i class="bi bi-brightness-high-fill"id="toggle"></i></h3></li>
         </div>
@@ -374,10 +375,11 @@
             <button class="btn btn-primary btn-lg"id="akordbtna">A</button>
             <button class="btn btn-primary btn-lg"id="akordbtnam">Am</button>
             <button  class="btn btn-primary btn-lg"id="akordbtndsus2">Dsus2</button>
+            <button  class="btn btn-primary btn-lg"id="akordbtnd">D</button>
             &nbsp;&nbsp;
-            <button class="btn btn-primary btn-lg"id="akordbtnc">C</button>
-            <button class="btn btn-primary btn-lg"id="akordbtng">G</button>
-            <button  class="btn btn-primary btn-lg"id="akordbtnf">F</button>
+            
+            
+            
 
         </div>
     </div><br><br>
@@ -579,10 +581,7 @@
 
                 $("#akordbtna").css("background-color","#0d6efd"); 
                 $("#akordbtnam").css("background-color","#0d6efd"); 
-                $("#akordbtnc").css("background-color","#0d6efd"); 
-                $("#akordbtne").css("background-color","#0d6efd"); 
-                $("#akordbtnf").css("background-color","#0d6efd"); 
-                $("#akordbtng").css("background-color","#0d6efd");
+                $("#akordbtnd").css("background-color","#0d6efd"); 
                 $("#akordbtndsus2").css("background-color","#0d6efd"); 
 
 
@@ -592,13 +591,17 @@
             $("#akordbtna").click(function(){
                 $("#akordbtna").css("background-color","green"); 
                 
-                
+                eNota.src = "audio/Open/e.mp3";
+                bNota.src = "audio/A/B.mp3";
+                gNota.src = "audio/A/G.mp3";
+                dNota.src = "audio/A/D.mp3";
+                aNota.src = "audio/Open/A.mp3";
+                EvNota.src = "audio/Open/Ev.mp3";
                 $("#akordbtnotvoren").css("background-color","#0d6efd"); 
                 $("#akordbtnam").css("background-color","#0d6efd"); 
-                $("#akordbtnc").css("background-color","#0d6efd"); 
+                $("#akordbtnd").css("background-color","#0d6efd"); 
                 $("#akordbtndsus2").css("background-color","#0d6efd"); 
-                $("#akordbtnf").css("background-color","#0d6efd"); 
-                $("#akordbtng").css("background-color","#0d6efd"); 
+                
 
 
             });
@@ -613,10 +616,9 @@
                 EvNota.src = "audio/Open/Ev.mp3";
                 $("#akordbtnotvoren").css("background-color","#0d6efd"); 
                 $("#akordbtna").css("background-color","#0d6efd"); 
-                $("#akordbtnc").css("background-color","#0d6efd"); 
+                $("#akordbtnd").css("background-color","#0d6efd"); 
                 $("#akordbtndsus2").css("background-color","#0d6efd"); 
-                $("#akordbtnf").css("background-color","#0d6efd"); 
-                $("#akordbtng").css("background-color","#0d6efd");
+             
             });
             $("#akordbtndsus2").click(function(){
                 $("#akordbtndsus2").css("background-color","green");   
@@ -628,39 +630,25 @@
                 EvNota.src = "audio/Open/Ev.mp3";
                 $("#akordbtnotvoren").css("background-color","#0d6efd"); 
                 $("#akordbtna").css("background-color","#0d6efd"); 
-                $("#akordbtnc").css("background-color","#0d6efd"); 
+                $("#akordbtnd").css("background-color","#0d6efd"); 
                 $("#akordbtnam").css("background-color","#0d6efd"); 
-                $("#akordbtnf").css("background-color","#0d6efd"); 
-                $("#akordbtng").css("background-color","#0d6efd");
+            
+               
             });
-            $("#akordbtnc").click(function(){
-                $("#akordbtnc").css("background-color","green");   
+           
+            
+            $("#akordbtnd").click(function(){
+                $("#akordbtnd").css("background-color","green");   
 
+                eNota.src = "audio/D/E.mp3";
+                bNota.src = "audio/D/B.mp3";
+                gNota.src = "audio/D/G.mp3";
+                dNota.src = "audio/Open/D.mp3";
+                aNota.src = "audio/Open/A.mp3";
+                EvNota.src = "audio/Open/Ev.mp3";
                 $("#akordbtnotvoren").css("background-color","#0d6efd"); 
                 $("#akordbtna").css("background-color","#0d6efd"); 
-                $("#akordbtnam").css("background-color","#0d6efd"); 
                 $("#akordbtndsus2").css("background-color","#0d6efd"); 
-                $("#akordbtnf").css("background-color","#0d6efd"); 
-                $("#akordbtng").css("background-color","#0d6efd");
-            });
-            $("#akordbtng").click(function(){
-                $("#akordbtng").css("background-color","green");   
-
-                $("#akordbtnotvoren").css("background-color","#0d6efd"); 
-                $("#akordbtna").css("background-color","#0d6efd"); 
-                $("#akordbtnc").css("background-color","#0d6efd"); 
-                $("#akordbtndsus2").css("background-color","#0d6efd"); 
-                $("#akordbtnf").css("background-color","#0d6efd"); 
-                $("#akordbtnam").css("background-color","#0d6efd");
-            });
-            $("#akordbtnf").click(function(){
-                $("#akordbtnf").css("background-color","green");   
-
-                $("#akordbtnotvoren").css("background-color","#0d6efd"); 
-                $("#akordbtna").css("background-color","#0d6efd"); 
-                $("#akordbtnc").css("background-color","#0d6efd"); 
-                $("#akordbtndsus2").css("background-color","#0d6efd"); 
-                $("#akordbtng").css("background-color","#0d6efd"); 
                 $("#akordbtnam").css("background-color","#0d6efd");
             });
 
