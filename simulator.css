@@ -1,0 +1,103 @@
+
+        
+        #canvas{
+            height:850px;
+            background-color: burlywood;
+            border-top-left-radius:30px;
+            border-top-right-radius:30px;
+            overflow: hidden;
+            
+           
+        }
+        svg{
+            width:100%;
+            transform: rotate(270deg);            
+        }
+        @keyframes vibrate {
+            0% {
+                transform: translateY(-0.1px);
+                
+            }
+
+            25% {
+                transform: translateY(0.1px);
+                
+            }
+           
+            50% {
+                transform: translateY(-0.1px);
+            }
+
+            75% {
+                transform: translateY(0.1px);
+            }
+            
+            100% {
+                transform: translateY(-0.1px);
+             }    
+         }
+
+       
+
+         .animate{
+            -webkit-animation: 1s 'vibrate';
+           
+         }
+
+     #dn{
+      float: right;
+      list-style: none;
+      color:black;
+    }
+
+        
+    body{
+        transition-duration: 0.5s;
+    }
+
+    #navigacija{
+        transition-duration: 0.5s;
+        height:80px;
+    }
+
+    .accordionslika{
+        float:left;
+        padding-right: 20px;
+        padding-bottom:20px;
+        width:15%; 
+      
+    }
+
+    .accordion-collapse{
+        padding:25px;
+    }
+    .accordion-item{
+        border: none !important;
+
+    }
+    .upute{
+        font-size: larger;
+    }
+    .accordion-button{
+        color:#0d6efd;
+    }
+    .accordion-button:active {
+        background-color:white;
+    } 
+    .accordion-button:focus {
+        background-color:white;
+    } 
+
+    #toggle{
+        color: black;
+    }
+
+    .accordion{
+        border-radius: 0px !important;
+    }
+    
+    .maleupute{
+        color:#0d6efd;
+        font-size: 1rem;
+    }
+    

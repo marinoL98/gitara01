@@ -11,15 +11,23 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <style>
 
-       
+
+        body{
+            transition-duration: 0.5s;
+        }
+
+       #navigacija{
+        height:80px;
+       }
         
         .carousel{
-            width:720px;
+            width:900px;
             height:480px;
+            
         }
 
         .formauniversal{
@@ -28,7 +36,8 @@
             box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
             padding:10px;
             border-radius: 15px;
-            width:fit-content;
+            width:max-content;
+            
             
             
         }
@@ -57,38 +66,61 @@
             list-style: none;
             display:inline;
         }
+
+        #dn{
+            float: right;
+            list-style: none;
+            color:black;
+        }
+        .carousel-control-prev{
+            margin-left:-40px;
+        }
+        .carousel-control-next{
+            margin-right:-40px;
+        }
+        .formaoption{
+            color:rgba(0,0,0,.55)
+        }
+        #toggle{
+            color:black;
+        }
     </style>
 </head>
 <body>
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light shadow fixed-top"id="navigacija">
-        <div class="container">
+        <div class="container">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <ul class="navbar-nav mx-auto sm-12 md-4"id="mojUl"> <!--MX-AUTO CENTRIRA postoje jos 'ms' i sl.....-->
-            <li class="nav-item active "id="mojLi"><a class="nav-link" href="index.html">Home</a></li>
-            <li class="nav-item active "id="mojLi"><a class="nav-link" href="tablica.php">Library</a></li>
+             <li class="nav-item active "id="mojLi"><a class="nav-link" href="index.html">Index</a></li>
+            <li class="nav-item active "id="mojLi"><a class="nav-link" href="tablica.php">Pjesme</a></li>
             <li class="nav-item active "id="mojLi"><a class="nav-link" href="simulator.html">Sviraj</a></li>
             <li class="nav-item active "id="mojLi"><a class="nav-link" href="kviz.html">Kviz</a></li>
           </ul>  
-          <li class="nav-item active "id="dn"><a class="nav-link"><h3><i class="bi bi-brightness-high-fill"id="toggle"></i></h3></li>
+          <li class="nav-item active"id="dn"><a class="nav-link"><h3><i class="bi bi-brightness-high-fill"id="toggle"></i></h3></li>
         </div>
     </nav>
 
     <div id="container-fluid">
         <br><br><br><br>
         <center><div id="row d-flex justify-content-center">
-            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div id="carouselExampleControls" class="carousel slide carousel-fade" data-bs-ride="carousel">
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <img src="https://c4.wallpaperflare.com/wallpaper/396/304/27/cool-hd-wallpaper-preview.jpg" class="d-block w-100" alt="...">
+                    <code>1</code>
+                    <img src="assets/img/Carousel/PRVO.png" class="d-block w-100" alt="...">
+                    
                   </div>
                   <div class="carousel-item">
-                    <img src="https://c4.wallpaperflare.com/wallpaper/396/304/27/cool-hd-wallpaper-preview.jpg" class="d-block w-100" alt="...">
+                    <code>2</code>
+                    <img src="assets/img/Carousel/DRUGO.png" class="d-block w-100" alt="...">
                   </div>
                   <div class="carousel-item">
-                    <img src="https://c4.wallpaperflare.com/wallpaper/396/304/27/cool-hd-wallpaper-preview.jpg" class="d-block w-100" alt="...">
+                    <code>3</code>
+                    <img src="assets/img/Carousel/TRECE.png" class="d-block w-100" alt="...">
                   </div>
                   <div class="carousel-item">
-                    <img src="https://c4.wallpaperflare.com/wallpaper/396/304/27/cool-hd-wallpaper-preview.jpg" class="d-block w-100" alt="...">
+                    <code>4</code>
+                    <img src="assets/img/Carousel/CETVRTO.png" class="d-block w-100" alt="...">
                   </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -100,95 +132,124 @@
                   
                 </button>
               </div>
-        </div></center>
+        </div></center><br><br>
         <center><div id="row">
         <ul>
             <li>
-            <div id="col-6" class="colpitanja">
+            <div id="col-4" class="colpitanja">
                 
                 <div id="forma1"class="formauniversal"> <!--Od koliko noti se sastoje triadi?-->
                     <div class="form-check">
                         <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
                         <label class="form-check-label" for="flexRadioDefault1">
-                        Tri
+                            <p class="formaoption">Tri</p>
                         </label>
                     </div>
                     <div class="form-check">
                         <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
                         <label class="form-check-label" for="flexRadioDefault2">
-                        Dvi
+                            <p class="formaoption">Dvi</p>
                         </label>
                     </div>
                     <div class="form-check">
                         <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3" checked>
                         <label class="form-check-label" for="flexRadioDefault2">
-                    Pet
+                            <p class="formaoption">Pet</p>
                         </label>
                     </div>
                     <div class="form-check">
                         <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4" checked>
                         <label class="form-check-label" for="flexRadioDefault2">
-                        Četiri
+                            <p class="formaoption">Četiri</p>
                         </label>
                     </div>
                 </div>
             </div></li>
-                <li><div id="col-6" class="colpitanja"> <!--Za koju žanr glazbe se aukustična gitara NE koristi?-->
+                <li><div id="col-4" class="colpitanja"> <!--Za koju žanr glazbe se akustična gitara NE koristi?-->
                     <div id="forma2"class="formauniversal">
                         <div class="form-check">
                             <input class="form-check-input" type="radio" name="flexRadio2" id="flexRadioDefault5">
                             <label class="form-check-label" for="flexRadioDefault1">
-                            Blues
+                                <p class="formaoption">Blues</p>
                             </label>
                         </div>
                         <div class="form-check">
                             <input class="form-check-input" type="radio" name="flexRadio2" id="flexRadioDefault6" checked>
                             <label class="form-check-label" for="flexRadioDefault2">
-                            Folk
+                                <p class="formaoption">Folk</p>
                             </label>
                         </div>
                         <div class="form-check">
                             <input class="form-check-input" type="radio" name="flexRadio2" id="flexRadioDefault7" checked>
                             <label class="form-check-label" for="flexRadioDefault2">
-                            Country
+                                <p class="formaoption">Country</p>
                             </label>
                         </div>
                         <div class="form-check">
                             <input class="form-check-input" type="radio" name="flexRadio2" id="flexRadioDefault8" checked>
                             <label class="form-check-label" for="flexRadioDefault2">
-                            Klasična
+                                <p class="formaoption">Klasična</p>
                             </label>
                         </div>
                     </div>
             </div></li>
-            <li><div id="col-6" class="colpitanja"> <!--Za koju žanr glazbe se aukustična gitara NE koristi?-->
+            <li><div id="col-4" class="colpitanja"> <!--Koju od ovih ne pripada A dur skali?-->
                 <div id="forma3"class="formauniversal">
                     <div class="form-check">
                         <input class="form-check-input" type="radio" name="flexRadio3" id="flexRadioDefault9">
                         <label class="form-check-label" for="flexRadioDefault3">
-                        A
+                            <p class="formaoption">A</p>
                         </label>
                     </div>
                     <div class="form-check">
                         <input class="form-check-input" type="radio" name="flexRadio3" id="flexRadioDefault10" checked>
                         <label class="form-check-label" for="flexRadioDefault3">
-                        D#
+                            <p class="formaoption">D#</p>
                         </label>
                     </div>
                     <div class="form-check">
                         <input class="form-check-input" type="radio" name="flexRadio3" id="flexRadioDefault11" checked>
                         <label class="form-check-label" for="flexRadioDefault3">
-                        B
+                            <p class="formaoption">B</p>
                         </label>
                     </div>
                     <div class="form-check">
                         <input class="form-check-input" type="radio" name="flexRadio3" id="flexRadioDefault12" checked>
                         <label class="form-check-label" for="flexRadioDefault3">
-                        C#
+                            <p class="formaoption">C#</p>
                         </label>
                     </div>
                 </div>
         </div></li>
+
+        <li><div id="col-4" class="colpitanja"> <!--Koje godine je izumlejna moderna klasična gitara?-->
+            <div id="forma4"class="formauniversal">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadio4" id="flexRadioDefault13">
+                    <label class="form-check-label" for="flexRadioDefault4">
+                        <p class="formaoption">1852</p>
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadio4" id="flexRadioDefault14" checked>
+                    <label class="form-check-label" for="flexRadioDefault4">
+                        <p class="formaoption">1908</p>
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadio4" id="flexRadioDefault15" checked>
+                    <label class="form-check-label" for="flexRadioDefault4">
+                    <p class="formaoption">1822</p>
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadio4" id="flexRadioDefault16" checked>
+                    <label class="form-check-label" for="flexRadioDefault4">
+                        <p class="formaoption">1655</p>
+                    </label>
+                </div>
+            </div>
+    </div></li>
         </ul>
     </div></center>
 
@@ -202,11 +263,11 @@
                           <div class="toast-header">
                             <img src="..." class="rounded me-2" alt="...">
                             <strong class="me-auto">Odgovori</strong>
-                            <small>fdf</small>
-                            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                            <small></small>
+                            <button type="button" id="closetoast" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
                           </div>
                           <div class="toast-body">
-                           <code> 1. 'Tri'<br> 2. 'Klasična'</code>
+                           <code> 1. 'Tri'<br> 2. 'Klasična'</code><br><code> 3. 'D#'</code><br><code> 4. '1852'</code>
                           </div>
                         </div>
                       </div>
@@ -244,10 +305,60 @@
             if($("#flexRadioDefault8").is(':checked')){
                 napredak = napredak + 25;
             }
+            if($("#flexRadioDefault10").is(':checked')){
+                napredak = napredak + 25;
+            }
+            if($("#flexRadioDefault13").is(':checked')){
+                napredak = napredak + 25;
+            }
+
             $('.progress-bar').css('width', napredak+'%').attr('aria-valuenow', napredak);
 
             $("#zapis").text(napredak / 25 + "/4");
+            
+           
          });
+
+
+         $("#toggle").click(function(){
+                var kl =$("#toggle").attr('class');
+                if(kl == "bi bi-brightness-high-fill"){
+                    console.log("usa");
+                    $("#toggle").removeClass();
+                    $("#toggle").addClass("bi bi-brightness-high");
+                    $("body").css("background-color","#14171A");
+                    $("body").css("color","white");
+                    $("#navigacija").removeClass();
+                    $("#navigacija").addClass("navbar navbar-expand-lg navbar-light bg-dark shadow fixed-top");
+                    $("a").css("color","white");
+                    $("#toggle").css("color","white");
+                    $(".formauniversal").css("background-color","#161515");
+                    $(".formaoption").css("color","white");
+                    $(".toast-header").css("background-color","#212529");
+                    $(".toast-body").css("background-color","#14171A");
+                    $(".btn-close > i").css("color","white");
+                   
+                    
+                    
+                }
+        
+                else{
+                    $("#toggle").removeClass();
+                    $("#navigacija").removeClass();
+                    $("#navigacija").addClass("navbar navbar-expand-lg navbar-light bg-light shadow fixed-top");
+                    $("#toggle").addClass("bi bi-brightness-high-fill");
+                    $("body").css("background-color","white");
+                    $("body").css("color","black");
+                    $("a").css("color","rgba(0,0,0,.55)");
+                    $("#toggle").css("color","black");
+                    $(".formauniversal").css("background-color","white");
+                    $(".formaoption").css("color","rgba(0,0,0,.55)");
+                    $(".toast-header").css("background-color","white");
+                    $(".toast-body").css("background-color","white");
+                   
+                    
+                }
+            });
        
 
     </script>
